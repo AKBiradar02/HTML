@@ -1,0 +1,124 @@
+<!--ANIMATED Business Card-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Card</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #e9ecef;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 160vh;
+        }
+
+        .card-container {
+            perspective: 1000px;
+            /* For a subtle 3D effect on hover */
+        }
+
+        .card {
+            width: 500px;
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+            background-color: white;
+            border-radius: 60px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: rotateY(10deg);
+        }
+
+        .avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-top: 10px;
+            /* Half outside the card */
+            border: 5px solid white;
+            /* Creates a nice border effect */
+        }
+
+        .info {
+            text-align: center;
+            padding: 30px;
+        }
+
+        h1 {
+            margin: 10px 0;
+        }
+
+        p {
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        .social-icons {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .social-icons img {
+            width: 24px;
+            height: 24px;
+            margin: 0 10px;
+        }
+
+        .social-icons a {
+            transition: transform 0.3s;
+        }
+
+        .social-icons a:hover {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card-container">
+        <div class="card">
+            <img src="/Assets/ak.jpg" alt="ABHAY_BIRADAR" class="avtar">
+            <div class="info">
+
+                <h1>ABHAY Biradar</h1>
+                <p>Web Developer</p>
+                <p><a href="mailto:abhaybiradar02@gmail.com">abhaybiradar02@gmail.com</a></p>
+                <p>
+                    <a href="callto:+917558252524">+91 7558252524</a>
+                </p>
+
+                <div class="social-icons">
+                    <a href="https://twitter.com/abhaybiradar02">
+                        <img src="twitter-icon.png" alt="twitter"></a>
+
+                    <a href="https://www.linkedin.com/in/abhay-biradar-aa05301b7/">
+                        <img src="linkedin-icon.png" alt="LinkedIn">
+                    </a>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+</body>
+
+</html>
